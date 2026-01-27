@@ -1,5 +1,5 @@
 ﻿// Module 2: Console Calculator
-// Demostrates: Variable types, Operators, Conditionals, Loop and Constants
+// Demonstrates: Variable types, Operators, Conditionals, Loop, and Constants
 // Created by: Anderson Urbina
 
 using System.Globalization;
@@ -31,7 +31,7 @@ class Program
             ["Tax"] = 0
         };
 
-        // Do while loop to handle user input
+        // Do a while while loop to handle user input
         do
         {
             Console.WriteLine("Operations: + - * / avg tax exit");
@@ -88,8 +88,8 @@ class Program
                     break;
             }
 
-            //Ternary operator example to print last result
-            string lastDisplay = hasLastResult ? lastResult.ToString("G", CultureInfo.InvariantCulture) : "N/A";
+            //Ternary operator example to print the last result
+            string lastDisplay = hasLastResult ? lastResult.ToString("G", CultureInfo.InvariantCulture): "N/A";
             Console.WriteLine($"Last numeric result {lastDisplay}");
 
             //Control to break out of the program
@@ -99,7 +99,7 @@ class Program
 
         } while (continueRunning);
 
-        //Display a sumaary with a for loop
+        //Display a summary with a for loop
         Console.WriteLine("===== Session Summary =====");
         int totalOps = 0;
         foreach (var kvp in operationCount)
@@ -119,7 +119,7 @@ class Program
 
     //Helper Methods
 
-    //Method to validate user input and intered doubles
+    //Method to validate user input and entered doubles
 
     private static double ReadDouble(string prompt)
     {
@@ -138,7 +138,7 @@ class Program
         }
     }
 
-    //Method to validate user entered decimals
+    //Method to validate user-entered decimals
     private static decimal ReadDecimal(string prompt)
     {
         while (true)
@@ -177,7 +177,7 @@ class Program
         return result;
     }
 
-    //Mthod to Multiplay 2 Numbers
+    //Method to Multiply 2 Numbers
     private static double Multiply()
     {
         double a = ReadDouble("Enter first number: ");
@@ -204,7 +204,7 @@ class Program
         return result;
     }
 
-    //Method to calculate average of 2 numbers
+    //Method to calculate the average of 2 numbers
     private static double Average()
     {
         double a = ReadDouble("Enter first number: ");
