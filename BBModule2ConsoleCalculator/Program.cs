@@ -224,7 +224,6 @@ class Program
         Console.WriteLine($"Total with tax: {total:C}");
     }
 
-
 }
 
 //End of Program.cs
